@@ -1,16 +1,17 @@
 import java.util.Date;
+import java.util.logging.Logger;
 
 public class Hello {
 
   /**
    * @param args: arguments passed when starting the application
    * */
+  private static final Logger LOGGER = Logger.getLogger(Hello.class.getClass().getName());
 
   public static void main(String[] args) {
-    System.out.println("The first day");
     Date d1 = new Date(1590750701050L);
     Date d2 = new Date(1590750701049L);
-    System.out.println("First date is " + d1.toString());
-    System.out.println("Second date is " + d2.toString());
+    LOGGER.info(()->"First date is %s"+ d1.toString());
+    LOGGER.info(()->"Second date is " + d2.toString());
   }
 }

@@ -2,6 +2,10 @@ import java.util.Date;
 
 public class Hello {
 
+  /**
+   * @param args: arguments passed when starting the application
+   * */
+
   public static void main(String[] args) {
     System.out.println("The first day");
     Date d1 = new Date(1590750701050L);
